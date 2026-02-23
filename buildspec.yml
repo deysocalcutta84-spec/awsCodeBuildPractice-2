@@ -7,7 +7,7 @@ phases:
 
   pre_build:
     commands:
-      - echo "$SSH_PRIVATE_KEY2" > sd23_key.pem
+      - echo "$SSH_PRIVATE_KEY3" > sd23_key.pem
       - chmod 400 sd23_key.pem
 
   build:
