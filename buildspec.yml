@@ -17,5 +17,5 @@ phases:
   post_build:
     commands:
       - echo Deploying to EC2
-      - scp -i sd23_key.pem -o StrictHostKeyChecking=no index.html ec2-user@18.218.237.71:/home/ec2-user/
-      - ssh -i sd23_key.pem ec2-user@18.218.237.71 "sudo mv /home/ec2-user/index.html /usr/share/nginx/html/index.html"
+      - scp -i sd23_key.pem -o StrictHostKeyChecking=no index.html ec2-user@3.129.66.251:/home/ec2-user/
+      - ssh -i sd23_key.pem ec2-user@3.129.66.251 "sudo mv /home/ec2-user/index.html /usr/share/nginx/html/index.html"
